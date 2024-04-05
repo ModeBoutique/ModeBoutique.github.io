@@ -167,6 +167,39 @@
           </div>
         </div>
       </div>
+
+    <div id="bolsa" class="mt-5">
+  <!-- Aquí se mostrarán los elementos agregados a la bolsa -->
+</div>
+
+#bolsa {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#bolsa li {
+  list-style-type: none;
+  margin-bottom: 5px;
+
+            <script>
+  function agregarALaBolsa(nombre, precio) {
+    var nuevoElemento = document.createElement("li");
+    nuevoElemento.textContent = nombre + " - $" + precio;
+
+    document.getElementById("bolsa").appendChild(nuevoElemento);
+  }
+</script>
+
+<div class="card m-2" style="width: 15rem">
+  <img src="imgs/ropa/img1.jpg" alt="" class="card-img-top" height="300" alt="Producto" />
+  <div class="card-body">
+    <p class="card-text fw-bold">Vestido Azul</p>
+    <small class="text-secondary"> ARS $2500 </small>
+    <button onclick="agregarALaBolsa('Vestido Azul', 2500)" class="btn btn-outline-dark">Agregar a la bolsa</button>
+  </div>
+</div>
+      
       <a href="paginas/listaDeProductos.html" class="btn btn-outline-dark my-5">
         Ver Todos los Productos
       </a>
