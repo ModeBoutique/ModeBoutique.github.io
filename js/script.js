@@ -12,9 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("vaciar-bolsa").addEventListener("click", function() {
         document.getElementById("items-list").innerHTML = "";
     });
-
-    // Ejemplo de cómo llamar a la función agregarALaBolsa desde un botón
-    document.getElementById("boton-agregar").addEventListener("click", function() {
-        agregarALaBolsa("Camisa Azul", 25.00);
-    });
 });
