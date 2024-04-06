@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolsa - Moda Boutique</title>
+    <title>Tu tienda - Bolsa</title>
+    <link rel="stylesheet" href="estyles.css">
 </head>
 <body>
-    <h1>Mi Bolsa</h1>
-    <!-- Aquí puedes agregar el contenido de tu bolsa de compras -->
+
+<div class="container">
+    <h1>Tu Bolsa de Compras</h1>
+    
+    <div class="bolsa-container">
+        <!-- Aquí irán los productos en la bolsa -->
+        <div class="producto">
+            <img src="ruta/a/la/imagen.jpg" alt="Producto">
+            <div class="producto-info">
+                <p class="producto-nombre">Nombre del Producto</p>
+                <p class="producto-precio">$100.00</p>
+            </div>
+            <button class="btn-eliminar">Eliminar</button>
+        </div>
+        
+        <!-- Repite esta estructura para cada producto en la bolsa -->
+    </div>
+    
+    <button class="btn-vaciar">Vaciar Bolsa</button>
+    <p class="total">Total: $200.00</p>
+</div>
+
 </body>
 </html>
